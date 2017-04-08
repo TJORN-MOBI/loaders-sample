@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobi.tjorn.loadertest.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/destroyLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/destroy_loader"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/restartLoader"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/loaderResult" />
+
+    <Button
+        android:id="@+id/restartLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_loader"
+        app:layout_constraintRight_toLeftOf="@+id/destroyLoader"
+        app:layout_constraintLeft_toRightOf="@+id/initLoader"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/loaderResult" />
+
+    <TextView
+        android:id="@+id/loaderResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="loader result"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.497" />
+
+    <Button
+        android:id="@+id/initLoader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/init_loader"
+        app:layout_constraintRight_toLeftOf="@+id/restartLoader"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/loaderResult" />
+
+</android.support.constraint.ConstraintLayout>

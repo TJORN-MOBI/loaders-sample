@@ -1,0 +1,12 @@
+.externalNativeBuild
+.gradle
+.idea
+build
+local.properties
+*.iml
+*~
+WorkspaceInfo.xml
+.DS_Store
+*.keystore
+/captures
+loaders

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoaderTest</string>
+    <string name="restart_loader">Restart</string>
+    <string name="destroy_loader">Destroy</string>
+    <string name="init_loader">Init</string>
+    <string name="loading">Loading…</string>
+    <string name="loader_reset">Loader reset</string>
+    <string name="loader_destroyed">Loader destroyed</string>
+</resources>
